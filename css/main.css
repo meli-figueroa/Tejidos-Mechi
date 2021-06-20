@@ -98,7 +98,7 @@
     display: none; 
   }
 
-  .menuCelu {
+  .menuCelu{
     position: sticky;
     top: 0;
     display: inline-block;
@@ -110,7 +110,7 @@
     border-radius: 20px;  
   }
   
-  .menuCelu__secciones {
+  .menuCelu__secciones{
     display: none;
     position: absolute;
     background-color: #DCBAA9;
@@ -132,7 +132,7 @@
     display: block;
   }
 
-  .menuCelu__secciones>li>a {
+  .menuCelu__secciones>ul>li>a {
     text-decoration: none;
     text-align: center;
     color: #65463E; 
@@ -310,7 +310,7 @@
     text-align: center; 
   }
   
-  .nav{
+  .nav>ul{
     list-style-type: none;
     text-align: center;
     position: sticky;
@@ -532,7 +532,7 @@
     position: static; 
   }
   
-  .nav {
+  .nav>ul{
     list-style-type: none;
     text-align: center;
     position: sticky;
