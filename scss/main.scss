@@ -3,61 +3,75 @@
   font-family: 'Roboto', sans-serif;
   color: #65463E;
   background-color: #D2E5D0;
-  padding: 10px; }
+  padding: 10px; 
+}
 
 /*grilla*/
 .nombre {
   grid-area: nombre;
-  align-self: center; }
+  align-self: center; 
+}
 
 .campoNombre {
   grid-area: campoNombre;
   font-family: 'Roboto', sans-serif;
-  border: 1px solid #DCBAA9; }
+  border: 1px solid #DCBAA9;
+}
 
 .telefono {
   grid-area: telefono;
-  align-self: center; }
+  align-self: center; 
+}
 
 .campoTelefono {
   grid-area: campoTelefono;
   font-family: 'Roboto', sans-serif;
-  border: 1px solid #DCBAA9; }
+  border: 1px solid #DCBAA9;
+}
 
 .email {
   grid-area: email;
-  align-self: center; }
+  align-self: center; 
+}
 
 .campoEmail {
-  grid-area: campoEmail;
+  grid-area: campoEmail; 
   font-family: 'Roboto', sans-serif;
-  border: 1px solid #DCBAA9; }
+  border: 1px solid #DCBAA9;
+}
 
 .detallePedido {
   grid-area: detallePedido;
-  align-self: flex-start; }
+  align-self: flex-start; 
+}
 
 .campoDetallePedido {
   grid-area: campoDetallePedido;
   font-family: 'Roboto', sans-serif;
-  border: 1px solid #DCBAA9; }
+  border: 1px solid #DCBAA9;
+}
 
 .tipoEnvio {
-  grid-area: tipoEnvio; }
+  grid-area: tipoEnvio; 
+}
 
 .opcionEnviar {
   grid-area: opcionEnviar;
-  align-self: flex-start; }
+  align-self: flex-start;
+}
 
 .botones {
-  grid-area: botones; }
+  grid-area: botones; 
+}
+
 
 .limpiar {
   padding: 12px;
   margin: 5px;
   font-family: 'Roboto', sans-serif;
-  background-color: #D2E5D0;
-  border-style: none; }
+  background-color: #D2E5D0; 
+  border-style: none;
+}
 
 .enviar {
   padding: 12px 16px;
@@ -67,28 +81,36 @@
   margin: 5px;
   background-color: #D2E5D0;
   font-family: 'Roboto', sans-serif;
-  border-radius: 35px; }
+  border-radius: 35px; 
+}
 
 /*Diseño celulares, Nesting de SASS*/
 @media only screen and (max-width: 480px) {
+  
   .header {
     display: block;
     align-items: center;
     position: static;
-    text-align: center; }
+    text-align: center; 
+  }
+
   .nav {
-    display: none; }
-  .menuCelu {
+    display: none; 
+  }
+
+  .menuCelu{
     position: sticky;
     top: 0;
     display: inline-block;
     padding: 12px 16px 12px 16px;
     border-style: solid;
     border-color: #dcbaa9;
-    background-color: #D2E5D0;
+    background-color: #D2E5D0; 
     border-width: 2px;
-    border-radius: 20px; }
-  .menuCelu__secciones {
+    border-radius: 20px;  
+  }
+  
+  .menuCelu__secciones{
     display: none;
     position: absolute;
     background-color: #DCBAA9;
@@ -96,129 +118,199 @@
     box-shadow: 0px 8px 16px 0px #65463E;
     padding: 12px 16px;
     z-index: 1;
-    border-radius: 15px; }
-  .menuCelu:hover {
+    border-radius: 15px;
+  }
+  
+
+  .menuCelu:hover{
     background-color: #DCBAA9;
-    font-weight: bolder; }
+    font-weight: bolder ;
+  }
+
+
   .menuCelu:hover .menuCelu__secciones {
-    display: block; }
-  .menuCelu__secciones > ul > li > a {
+    display: block;
+  }
+
+  .menuCelu__secciones>ul>li>a {
     text-decoration: none;
     text-align: center;
-    color: #65463E; }
+    color: #65463E; 
+  }
+
   .misCreaciones {
-    text-align: center; }
+    text-align: center; 
+  }
+  
   .misCreaciones h2 {
     padding: 12px 16px;
-    background-color: #DCBAA9; }
+    background-color: #DCBAA9; 
+  }
+  
   .misCreaciones article {
     display: inline;
-    align-content: center; }
+    align-content: center; 
+  }
+  
   .misCreaciones article img {
     display: inline;
     margin: 10px;
     height: 300px;
     width: 250px;
-    transition: all 0.2s; }
+    transition: all 0.2s; 
+  }
+  
   .misCreaciones article img:hover {
     height: 315px;
     width: 265px;
-    transform: rotate(0.5deg); }
+    transform: rotate(0.5deg); 
+  }
+
   .sobreMi h2 {
     padding: 12px 16px;
     background-color: #DCBAA9;
-    text-align: center; }
+    text-align: center; 
+  }
+
   .sobreMi article {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center; 
+  }
+
   .sobreMi img {
     display: inline-block;
     margin: 10px;
     height: 350px;
     width: 250px;
     align-content: center;
-    transition: all 0.2s; }
-  .presentación_imgSobreMi:hover {
-    transform: rotate(0.7deg); }
+    transition: all 0.2s;   
+  }
+
+  .presentación_imgSobreMi:hover{
+    transform: rotate(0.7deg);
+  }
+
   .sobreMi p {
     padding: 12px;
-    margin: 15px; }
+    margin: 15px; 
+  }
+
   .quieroTejido {
-    text-align: center; }
+    text-align: center; 
+  }
+  
   .quieroTejido h2 {
-    padding: 12px 16px;
-    background-color: #DCBAA9;
-    text-align: center; }
+      padding: 12px 16px;
+      background-color: #DCBAA9;
+      text-align: center; 
+  }
+
   .gridsForm {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(8, 40px);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    grid-template-areas: "nombre campoNombre" "telefono campoTelefono" "email campoEmail" "detallePedido campoDetallePedido" ". campoDetallePedido" "tipoEnvio opcionEnviar" "none none" "botones botones"; }
-  .limpiar:hover {
+    grid-template-areas: 
+    "nombre campoNombre"
+    "telefono campoTelefono"
+    "email campoEmail"
+    "detallePedido campoDetallePedido"
+    ". campoDetallePedido"
+    "tipoEnvio opcionEnviar"
+    "none none"
+    "botones botones"; 
+  }
+
+  .limpiar:hover{
     border-bottom: solid;
     border-bottom-color: #DCBAA9;
     border-top-color: #D2E5D0;
     border-left-color: #D2E5D0;
     border-right-color: #D2E5D0;
-    border-width: 1px; }
+    border-width: 1px;
+  }
+
   .enviar:hover {
     background-color: #DCBAA9;
-    font-weight: bolder; }
+    font-weight: bolder ;  
+  }
+
   .footer {
-    display: none; }
-  .footerCelu {
+    display: none; 
+  }
+
+  .footerCelu{
     background-color: #DCBAA9;
     display: block;
     align-items: center;
-    text-align: center; }
-  .footerCelu__instagram {
+    text-align: center;
+  }
+  
+  .footerCelu__instagram{
     display: inline;
     align-items: center;
     margin: 2px;
     padding: 12px;
     color: #65463E;
-    text-decoration: none; }
-  .instagram__logoIgCelu {
+    text-decoration: none;
+  }
+
+  .instagram__logoIgCelu{
     width: 25px;
     height: 25px;
     margin: 2px;
-    padding: 5px; }
-  .footerCelu__facebook {
+    padding: 5px;
+  }
+
+  .footerCelu__facebook{
     display: inline;
     align-items: center;
     margin: 2px;
     padding: 12px;
     color: #65463E;
-    text-decoration: none; }
-  .instagram__logoFbCelu {
+    text-decoration: none;
+  }
+
+  .instagram__logoFbCelu{
     width: 25px;
     height: 25px;
     margin: 2px;
-    padding: 5px; }
-  .footerCelu__whatsapp {
+    padding: 5px;
+  }
+
+  .footerCelu__whatsapp{
     display: inline;
     align-items: center;
     margin: 2px;
     padding: 12px;
     color: #65463E;
-    text-decoration: none; }
-  .instagram__logoWppCelu {
+    text-decoration: none;
+  }
+
+  .instagram__logoWppCelu{
     width: 25px;
     height: 25px;
     margin: 2px;
-    padding: 5px; } }
+    padding: 5px;
+  }
+
+  
+}
+
 
 /*Diseño tablets*/
 @media only screen and (min-width: 480px) and (max-width: 768px) {
+  
   .header {
     display: block;
     align-items: center;
     position: static;
-    text-align: center; }
-  .nav > ul {
+    text-align: center; 
+  }
+  
+  .nav>ul{
     list-style-type: none;
     text-align: center;
     position: sticky;
@@ -226,144 +318,221 @@
     background-color: #D2E5D0;
     display: flex;
     flex-direction: row;
-    justify-content: space-around; }
-  .nav > li {
+    justify-content: space-around; 
+  }
+  
+  .nav>li {
     display: inline-block;
     text-align: center;
     padding: 12px 16px 12px 16px;
     border-style: solid;
     border-color: #dcbaa9;
     border-width: 1px;
-    margin: 10px;
-    border-radius: 20px; }
-  .nav > li:hover {
+    margin: 10px; 
+    border-radius: 20px;
+  }
+
+  .nav>li:hover {
     background-color: #DCBAA9;
-    font-weight: bolder; }
-  .nav > li > a {
+    font-weight: bolder ;  
+  }
+
+    
+  .nav>li>a {
     text-decoration: none;
     text-align: center;
-    color: #65463E; }
-  .menuCelu {
-    display: none; }
+    color: #65463E; 
+  }
+
+  .menuCelu{
+    display: none;
+  }
+  
   .misCreaciones {
-    text-align: center; }
-  .misCreaciones__tituloSeccion {
+    text-align: center; 
+  }
+  
+  .misCreaciones__tituloSeccion{
     padding: 12px 16px;
-    background-color: #DCBAA9; }
-  .misCreaciones > article {
+    background-color: #DCBAA9;
+  }
+
+  .misCreaciones>article {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center; }
+    align-items: center;
+  }
+
   .misCreaciones article img {
     display: inline;
     margin: 10px;
     height: 400px;
     width: 250px;
-    transition: all 0.2s; }
+    transition: all 0.2s; 
+  }
+
+
   .misCreaciones article img:hover {
     height: 410px;
     width: 260px;
-    transform: rotate(0.3deg); }
+    transform: rotate(0.3deg); 
+  }
+
   .sobreMi h2 {
     padding: 12px 16px;
     background-color: #DCBAA9;
-    text-align: center; }
+    text-align: center; 
+  }
+
   .sobreMi article {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center; }
-  .presentación_imgSobreMi {
+    align-items: center; 
+  }
+
+  .presentación_imgSobreMi{
     margin: 20px;
     height: 400px;
     width: 250px;
-    transition: all 0.2s; }
-  .presentación_imgSobreMi:hover {
-    transform: rotate(0.7deg); }
+    transition: all 0.2s;  
+  }
+
+  .presentación_imgSobreMi:hover{
+    transform: rotate(0.7deg);
+  }
+
   .sobreMi p {
     padding: 12px;
-    margin: 15px; }
+    margin: 15px; 
+  }
+
   .quieroTejido {
-    text-align: center; }
+    text-align: center; 
+  }
+  
   .quieroTejido h2 {
     padding: 12px 16px;
     background-color: #DCBAA9;
-    text-align: center; }
+    text-align: center; 
+  }
+
   .quieroTejido form {
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 1fr;
     grid-template-rows: repeat(7, 3fr);
     grid-column-gap: 20px;
     grid-row-gap: 15px;
-    grid-template-areas: ". nombre campoNombre ." ". telefono campoTelefono ." ". email campoEmail ." ". detallePedido campoDetallePedido ." ". . campoDetallePedido ." ". tipoEnvio opcionEnviar ." ". botones botones ."; }
-  .limpiar:hover {
+    grid-template-areas: ". nombre campoNombre ."
+    ". telefono campoTelefono ."
+    ". email campoEmail ."
+    ". detallePedido campoDetallePedido ."
+    ". . campoDetallePedido ."
+    ". tipoEnvio opcionEnviar ."
+    ". botones botones ."; 
+  }
+
+  .limpiar:hover{
     border-bottom: solid;
     border-bottom-color: #DCBAA9;
     border-top-color: #D2E5D0;
     border-left-color: #D2E5D0;
     border-right-color: #D2E5D0;
-    border-width: 1px; }
+    border-width: 1px;
+  }
+
   .enviar:hover {
     background-color: #DCBAA9;
-    font-weight: bolder; }
+    font-weight: bolder ;  
+  }
+
   .footer {
     background-color: #DCBAA9;
     display: flex;
     flex-direction: row;
-    justify-content: space-around; }
-  .footer__instagram {
+    justify-content: space-around; 
+  }
+  
+  .footer__instagram{
     display: flex;
     align-items: center;
     margin: 5px;
     padding: 12px 16px 12px 16px;
     color: #65463E;
-    text-decoration: none; }
+    text-decoration: none;
+  }
+
   .footer__instagram:hover {
-    font-weight: bolder; }
-  .instagram__logoIg {
+    font-weight: bolder ;  
+  }
+
+  .instagram__logoIg{
     width: 30px;
     height: 30px;
     margin: 5px;
-    padding: 5px; }
-  .footer__facebook {
+    padding: 5px;
+  }
+
+  .footer__facebook{
     display: flex;
     align-items: center;
     margin: 5px;
     padding: 12px 16px 12px 16px;
     color: #65463E;
-    text-decoration: none; }
+    text-decoration: none;
+
+  }
+
   .footer__facebook:hover {
-    font-weight: bolder;
-    text-decoration: solid; }
-  .instagram__logoFb {
+    font-weight: bolder ;
+    text-decoration: solid;  
+  }
+
+  .instagram__logoFb{
     width: 30px;
     height: 30px;
     margin: 5px;
-    padding: 5px; }
-  .footer__whatsapp {
+    padding: 5px;
+  }
+
+  .footer__whatsapp{
     display: flex;
     align-items: center;
     margin: 5px;
     padding: 12px 16px 12px 16px;
     color: #65463E;
-    text-decoration: none; }
+    text-decoration: none;
+  }
+
   .footer__whatsapp:hover {
-    font-weight: bolder; }
-  .instagram__logoWpp {
+    font-weight: bolder ;  
+  }
+
+  .instagram__logoWpp{
     width: 30px;
     height: 30px;
     margin: 5px;
-    padding: 5px; }
-  .footerCelu {
-    display: none; } }
+    padding: 5px;
+  }
+
+  .footerCelu{
+    display: none;
+  }
+
+}
+
+
 
 /*Diseño para escritorio*/
 @media only screen and (min-width: 768px) {
+  
   .header {
     text-align: center;
-    position: static; }
-  .nav > ul {
+    position: static; 
+  }
+  
+  .nav>ul{
     list-style-type: none;
     text-align: center;
     position: sticky;
@@ -371,7 +540,9 @@
     background-color: #D2E5D0;
     display: flex;
     flex-direction: row;
-    justify-content: space-around; }
+    justify-content: space-around; 
+  }
+  
   .nav__linkMisCreaciones {
     text-align: center;
     padding: 12px 16px 12px 16px;
@@ -379,13 +550,19 @@
     border-color: #dcbaa9;
     border-width: 1px;
     margin: 10px;
-    border-radius: 15px; }
+    border-radius: 15px; 
+  }
+
   .nav__linkMisCreaciones:hover {
     background-color: #DCBAA9;
-    font-weight: bolder; }
+    font-weight: bolder ;  
+  }
+
   .nav__linkMisCreaciones a {
     text-decoration: none;
-    color: #65463E; }
+    color: #65463E; 
+  }
+
   .nav__linkSobreMi {
     text-align: center;
     padding: 12px 16px 12px 16px;
@@ -393,160 +570,245 @@
     border-color: #dcbaa9;
     border-width: 1px;
     margin: 10px;
-    border-radius: 15px; }
+    border-radius: 15px; 
+  }
+
   .nav__linkSobreMi:hover {
     background-color: #DCBAA9;
-    font-weight: bolder; }
+    font-weight: bolder ;  
+  }
+  
   .nav__linkSobreMi a {
     text-decoration: none;
-    color: #65463E; }
+    color: #65463E;  
+  }
+
   .nav__linkQuieroTejido {
     text-align: center;
     padding: 12px 16px 12px 16px;
     border-style: solid;
     border-color: #dcbaa9;
     border-width: 1px;
-    margin: 10px;
-    border-radius: 15px; }
+    margin: 10px; 
+    border-radius: 15px;
+  }
+
   .nav__linkQuieroTejido:hover {
     background-color: #DCBAA9;
-    font-weight: bolder; }
+    font-weight: bolder ;  
+  }
+  
   .nav__linkQuieroTejido a {
-    text-decoration: none;
-    color: #65463E; }
-  .menuCelu {
-    display: none; }
+    text-decoration: none; 
+    color: #65463E; 
+
+  }
+
+  .menuCelu{
+    display: none;
+  }
+  
   .misCreaciones__tituloSeccion {
     padding: 12px 16px;
     background-color: #DCBAA9;
-    text-align: center; }
+    text-align: center; 
+  }
+  
   .misCreaciones__parrafoSeccion {
-    text-align: center; }
+    text-align: center; 
+  }
+  
   .imagenesCreaciones {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center; }
+    align-items: center; 
+  }
+  
   .imagenesCreaciones__img1 {
     display: inline-block;
     margin: 10px;
     height: 450px;
     width: 300px;
-    transition: all 0.3s; }
+    transition: all 0.3s; 
+  }
+  
   .imagenesCreaciones__img1:hover {
     height: 460px;
     width: 310px;
-    transform: rotate(0.3deg); }
+    transform: rotate(0.3deg); 
+  }
+  
   .imagenesCreaciones__img2 {
     display: inline-block;
     margin: 10px;
     height: 450px;
     width: 300px;
-    transition: all 0.3s; }
+    transition: all 0.3s; 
+  }
+  
   .imagenesCreaciones__img2:hover {
     height: 460px;
     width: 310px;
-    transform: rotate(0.3deg); }
+    transform: rotate(0.3deg); 
+  }
+  
   .imagenesCreaciones__img3 {
     display: inline-block;
     margin: 10px;
     height: 450px;
     width: 300px;
-    transition: all 0.3s; }
+    transition: all 0.3s; 
+  }
+  
   .imagenesCreaciones__img3:hover {
     height: 460px;
     width: 310px;
-    transform: rotate(0.3deg); }
+    transform: rotate(0.3deg); 
+  }
+  
   .sobreMi__tituloSeccion {
     padding: 12px 16px;
     background-color: #DCBAA9;
-    text-align: center; }
+    text-align: center; 
+  }
+  
   .presentación {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center; }
+    align-items: center; 
+  }
+  
   .presentación_imgSobreMi {
     margin: 20px;
     height: 460px;
-    width: 310px;
+    width: 310px; 
     background-color: #DCBAA9;
-    transition: all 0.3s; }
+    transition: all 0.3s;
+  }
+
   .presentación_imgSobreMi:hover {
-    transform: rotate(0.7deg); }
+    transform: rotate(0.7deg);
+  }
+  
   .presentación_textoSobreMi {
-    text-align: center; }
+    text-align: center; 
+  }
+  
   .quieroTejido {
-    text-align: center; }
+    text-align: center; 
+  }
+  
   .quieroTejido__tituloSeccion {
     padding: 12px 16px;
     background-color: #DCBAA9;
-    text-align: center; }
+    text-align: center; 
+  }
+  
   .gridsForm {
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 1fr;
     grid-template-rows: repeat(7, 4fr);
     grid-column-gap: 20px;
     grid-row-gap: 15px;
-    grid-template-areas: ". nombre campoNombre ." ". telefono campoTelefono ." ". email campoEmail ." ". detallePedido campoDetallePedido ." ". . campoDetallePedido ." ". tipoEnvio opcionEnviar ." ". . botones botones"; }
-  .limpiar:hover {
+    grid-template-areas: 
+    ". nombre campoNombre ."
+    ". telefono campoTelefono ."
+    ". email campoEmail ."
+    ". detallePedido campoDetallePedido ."
+    ". . campoDetallePedido ."
+    ". tipoEnvio opcionEnviar ."
+    ". . botones botones";
+  }
+
+
+  .limpiar:hover{
     border-bottom: solid;
     border-bottom-color: #DCBAA9;
     border-top-color: #D2E5D0;
     border-left-color: #D2E5D0;
     border-right-color: #D2E5D0;
-    border-width: 1px; }
+    border-width: 1px;
+  }
+
   .enviar:hover {
     background-color: #DCBAA9;
-    font-weight: bolder; }
+    font-weight: bolder ;  
+  }
+
   .footer {
     background-color: #DCBAA9;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center; }
-  .footer__instagram {
+    align-items: center;
+  }
+
+  .footer__instagram{
     display: flex;
     align-items: center;
     margin: 5px;
     padding: 12px 16px 12px 16px;
     color: #65463E;
-    text-decoration: none; }
+    text-decoration: none;
+  }
+
   .footer__instagram:hover {
-    font-weight: bolder; }
-  .instagram__logoIg {
+    font-weight: bolder ;  
+  }
+
+  .instagram__logoIg{
     width: 40px;
     height: 40px;
     margin: 5px;
-    padding: 5px; }
-  .footer__facebook {
+    padding: 5px;
+  }
+
+  .footer__facebook{
     display: flex;
     align-items: center;
     margin: 5px;
     padding: 12px 16px 12px 16px;
     color: #65463E;
-    text-decoration: none; }
+    text-decoration: none;
+
+  }
+
   .footer__facebook:hover {
-    font-weight: bolder;
-    text-decoration: solid; }
-  .instagram__logoFb {
+    font-weight: bolder ;
+    text-decoration: solid;  
+  }
+
+  .instagram__logoFb{
     width: 40px;
     height: 40px;
     margin: 5px;
-    padding: 5px; }
-  .footer__whatsapp {
+    padding: 5px;
+  }
+
+  .footer__whatsapp{
     display: flex;
     align-items: center;
     margin: 5px;
     padding: 12px 16px 12px 16px;
     color: #65463E;
-    text-decoration: none; }
+    text-decoration: none;
+  }
+
   .footer__whatsapp:hover {
-    font-weight: bolder; }
-  .instagram__logoWpp {
+    font-weight: bolder ;  
+  }
+
+  .instagram__logoWpp{
     width: 40px;
     height: 40px;
     margin: 5px;
-    padding: 5px; }
-  .footerCelu {
-    display: none; } }
+    padding: 5px;
+  }
+
+  .footerCelu{
+    display: none;
+  }
+  
+}
